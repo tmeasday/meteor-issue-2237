@@ -1,0 +1,20 @@
+<head>
+  <title>uihooks-nested-template</title>
+</head>
+
+<body>
+  {{#if show}}
+    {{> hello}}
+  {{/if}}
+</body>
+
+<template name="hello">
+  <div>
+    Hello Content!
+    {{> nested}}
+  </div>
+</template>
+
+<template name="nested">
+  <p>Nested Content!</p>
+</template>
