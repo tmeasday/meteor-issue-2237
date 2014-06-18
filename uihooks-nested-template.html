@@ -11,10 +11,12 @@
 <template name="hello">
   <div>
     Hello Content!
+    <p>Nested Content in same template!</p>
     {{> nested}}
   </div>
 </template>
 
 <template name="nested">
-  <p>Nested Content!</p>
+  Non nested content in different template
+  <p>Nested Content in different template!</p>
 </template>
